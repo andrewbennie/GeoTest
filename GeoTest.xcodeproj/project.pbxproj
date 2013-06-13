@@ -18,6 +18,10 @@
 		A763D3EF1768FD7700FD8FE5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A763D3EE1768FD7700FD8FE5 /* Default-568h@2x.png */; };
 		A763D3F21768FD7700FD8FE5 /* QCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A763D3F11768FD7700FD8FE5 /* QCViewController.m */; };
 		A763D3F51768FD7700FD8FE5 /* QCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A763D3F31768FD7700FD8FE5 /* QCViewController.xib */; };
+		A763D3FC1768FE6200FD8FE5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A763D3FB1768FE6200FD8FE5 /* MapKit.framework */; };
+		A763D3FE1768FE8700FD8FE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A763D3FD1768FE8700FD8FE5 /* CoreLocation.framework */; };
+		A763D4021768FF5900FD8FE5 /* MapLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A763D4001768FF5900FD8FE5 /* MapLoadViewController.m */; };
+		A763D4031768FF5900FD8FE5 /* MapLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A763D4011768FF5900FD8FE5 /* MapLoadViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,11 @@
 		A763D3F01768FD7700FD8FE5 /* QCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCViewController.h; sourceTree = "<group>"; };
 		A763D3F11768FD7700FD8FE5 /* QCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCViewController.m; sourceTree = "<group>"; };
 		A763D3F41768FD7700FD8FE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QCViewController.xib; sourceTree = "<group>"; };
+		A763D3FB1768FE6200FD8FE5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A763D3FD1768FE8700FD8FE5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A763D3FF1768FF5900FD8FE5 /* MapLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLoadViewController.h; sourceTree = "<group>"; };
+		A763D4001768FF5900FD8FE5 /* MapLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLoadViewController.m; sourceTree = "<group>"; };
+		A763D4011768FF5900FD8FE5 /* MapLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapLoadViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A763D3FE1768FE8700FD8FE5 /* CoreLocation.framework in Frameworks */,
+				A763D3FC1768FE6200FD8FE5 /* MapKit.framework in Frameworks */,
 				A763D3D91768FD7700FD8FE5 /* UIKit.framework in Frameworks */,
 				A763D3DB1768FD7700FD8FE5 /* Foundation.framework in Frameworks */,
 				A763D3DD1768FD7700FD8FE5 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +67,7 @@
 		A763D3CC1768FD7700FD8FE5 = {
 			isa = PBXGroup;
 			children = (
+				A763D4041768FF6500FD8FE5 /* MapLoad */,
 				A763D3DE1768FD7700FD8FE5 /* GeoTest */,
 				A763D3D71768FD7700FD8FE5 /* Frameworks */,
 				A763D3D61768FD7700FD8FE5 /* Products */,
@@ -73,6 +85,8 @@
 		A763D3D71768FD7700FD8FE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A763D3FB1768FE6200FD8FE5 /* MapKit.framework */,
+				A763D3FD1768FE8700FD8FE5 /* CoreLocation.framework */,
 				A763D3D81768FD7700FD8FE5 /* UIKit.framework */,
 				A763D3DA1768FD7700FD8FE5 /* Foundation.framework */,
 				A763D3DC1768FD7700FD8FE5 /* CoreGraphics.framework */,
@@ -105,6 +119,16 @@
 				A763D3EE1768FD7700FD8FE5 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A763D4041768FF6500FD8FE5 /* MapLoad */ = {
+			isa = PBXGroup;
+			children = (
+				A763D3FF1768FF5900FD8FE5 /* MapLoadViewController.h */,
+				A763D4001768FF5900FD8FE5 /* MapLoadViewController.m */,
+				A763D4011768FF5900FD8FE5 /* MapLoadViewController.xib */,
+			);
+			name = MapLoad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +188,7 @@
 				A763D3ED1768FD7700FD8FE5 /* Default@2x.png in Resources */,
 				A763D3EF1768FD7700FD8FE5 /* Default-568h@2x.png in Resources */,
 				A763D3F51768FD7700FD8FE5 /* QCViewController.xib in Resources */,
+				A763D4031768FF5900FD8FE5 /* MapLoadViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +202,7 @@
 				A763D3E51768FD7700FD8FE5 /* main.m in Sources */,
 				A763D3E91768FD7700FD8FE5 /* QCAppDelegate.m in Sources */,
 				A763D3F21768FD7700FD8FE5 /* QCViewController.m in Sources */,
+				A763D4021768FF5900FD8FE5 /* MapLoadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
